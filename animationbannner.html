@@ -1,0 +1,82 @@
+<!doctype>
+<html>
+<head>
+       <tiitle>Web Animation</title>
+</head>
+<style>
+
+
+@keyframes changepic
+{
+background:red;
+}
+
+
+
+
+@keyframes runbanner
+{
+10%{left:15%:}
+20%{left:-15%;}
+30%{left:-30%;}
+40%{left:-30%;}
+50%{left:-45%;}
+60%{left:-45%;}
+70%{left:-60%;}
+80%{left:-60%;}
+90%{left:-60%;}
+100%{left:-75%;}
+100%{left:-75%;}
+}
+
+
+.picstyle
+{
+
+width:15%;
+height:100%;
+margin-left:-5px;
+animation:runbanner 12s infinite alternate;
+position:relative;
+
+}
+
+
+#banner1
+{
+width:7900px;
+height:700px;
+background:red;
+
+margin-left:-60px;
+margin:auto;
+animation runbanner 12s infinite alternate;
+background-size:cover;
+
+}
+
+</style>
+
+
+<body>
+
+<div id="banner1">
+
+
+
+<img src="images/p1.jpg" class="picstyle">
+<img src="images/p2.jpg" class="picstyle">
+<img src="images/p3.jpg" class="picstyle">
+<img src="images/p4.jpg" class="picstyle">
+<img src="images/p5.jpg" class="picstyle">
+<img src="images/p6.jpg" class="picstyle">
+
+</div>
+
+
+
+</body>
+</html>
+
+
+

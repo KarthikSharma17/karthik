@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+  #bg
+  {
+  
+    background-repeat: no-repeat;
+
+background-attachment:fixed;
+    background-size: 100%;
+
+  }
+</style>
+
+<body onload="show()" id="bg" style="background-image:url(images/news.webp)">
+    
+    
+   
+
+   
+    <h1 style="text-align: center; font-family: poppins regular;background-color: black;color: aliceblue;">HEAD NEWS </h1>
+
+<div id="nb" style="background-color: black;color: red;font-size: 20px;font-family: poppins ;text-transform:uppercase;width: 100%;">NEWS</div>
+</body>
+<ol>
+
+<script>
+var news = ["Farmers' protest turns violent with 1 death, Punjab CM says Prez rule attempt","Google CEO Sundar Pichai starts his day by visiting this website","Shubman Gill gives Jasprit Bumrah the Virat Kohli treatment as India enter Ranchi without World No. 1 Test bowler,","Pastel hues and florals: What Rakul Preet Singh and Jackky Bhagnani wore for their Goa wedding","Centre hikes fair and remunerative price of sugarcane to 340/quintal","Akash Deep likely to make Test debut vs England in Ranchi: Why he is better fit to replace Bumrah than Mukesh Kumar","WPL 2024: Star-studded Mumbai Indians again the team to beat","US lawyers tell UK court why Julian Assange should face spying charges: Created grave & imminent risk"]
+
+var a = 0 
+var n = document.getElementById("nb")
+var m =" "
+var r,g,b 
+var a = 0;
+function show()
+{
+    r = Math.round(Math.random()*255)
+    g = Math.round(Math.random()*255)
+    b = Math.round(Math.random()*255)
+    n.innerHTML = news[a]
+    n.style.color="rgb("+r+","+g+","+b+")"
+
+ 
+    if(
+        a<news.length-1)
+    
+a++
+else
+{
+a=0
+}
+setTimeout("show()",5000)
+}
+
+
+
+</script>
+</ol>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+
+.pic{width: 40vw; ;  margin-right: 500px; margin-inline: 5vw; margin-block: 4vw;
+    transition: 0.5s ease-in-out; border: 0.2vw  ; border-radius:0;  
+    ;
+    
+    }
+
+
+.pic:hover
+{
+    border-radius:  2vw; transform: scale(1.2);
+}
+
+
+.EE{
+    color: aliceblue;
+    font-family:  Helvetica;
+    text-align: center;
+}
+
+
+
+
+</style>
+<body>
+    
+    <h1 class="EE"> THIS IS MADE WITH HELP OF FOR LOOP </h1>
+    
+    
+    
+    
+    <script>
+
+document.bgColor="black"
+
+var p="<img src='images/n1.jpg'>"
+
+for(i=1;i<=7;i++){
+ l="images/l"+i+".jpg"
+
+
+document.write("<img class= 'pic' src ='"+l+"' >")
+
+}
+
+    </script>
+</body>
+</html>

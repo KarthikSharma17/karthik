@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<style> 
+#banner 
+{
+    
+    top: 0px;
+    left: 10%;
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    box-shadow: 10px 10px 10px gray;
+    overflow: hidden;
+    perspective: 500px;
+}
+
+.pic
+{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 1.50s ease-in-out;
+}
+
+
+
+.ani
+{
+    opacity: 0;
+}
+
+
+
+</style>
+<body onload ="runbanner()">
+   
+<h1 style="font-family: poppins regular;"> ANIMATION BANNER FOR MARKETING,WEBSITE HERO IMAGES,etc. USING JAVA </h1>
+<div id="banner"></div>
+
+
+
+<script>
+var p = new Array(8)
+var b = document.getElementById("banner")
+
+for(var i = 8 ; i>=0;i--)
+{
+    p[i] = document.createElement("img")
+    p[i].src="images/a"+i+".gif"
+    p[i].classList.add("pic")
+    b.appendChild(p[i])
+}
+
+//alert(p[0].src)
+
+var c = -1 
+  function runbanner()
+{
+if(c<8)
+{
+    c++
+}
+else
+{
+    c=0
+}
+
+
+
+
+
+switch(c)
+{
+    case 0:
+        p[0].style.transform="translateX(1500px)"
+        break;
+
+
+        case 1:
+            //p[1].style.opacity ="0" 
+            //p[1].style.transform="scale(0) rotate(360deg)"
+            p[1].style.transform="translateX(1500px)"
+
+            break;
+
+
+            case 2:
+            p[1].style.transform="translateX(1500px)"
+            break;
+
+            case 3:
+            p[3].style.transform="translateX(1500px)"
+            break;
+
+            case 4:
+            p[4].style.transform="translateX(1500px)"
+            break;
+
+            case 5:
+            p[5].style.transform="translateX(1500px)"
+            break;
+
+            case 6:
+            p[6].style.transform="translateX(1500px)"
+            break;
+
+            case 7:
+            p[7].style.transform="translateX(1500px)"
+            break;
+
+            case 8:
+            p[0].style.opacity ="1"
+            p[1].style.opacity ="1"
+            p[2].style.opacity ="1"
+            p[3].style.opacity ="1"
+            p[4].style.opacity ="1"
+            p[5].style.opacity ="1"
+            p[6].style.opacity ="1"
+            p[7].style.opacity ="1"
+            p[8].style.opacity ="1"
+          
+           
+            break;
+
+}
+
+document.title=c
+setTimeout("runbanner()",2000)
+
+}
+
+
+
+</script>
+
+</body>
+</html>

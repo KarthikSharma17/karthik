@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<style>
+    #yy 
+    {
+        text-align: center;
+        font-family: poppins;
+    }
+</style>
+<body>
+    
+    <h6 id="yy">CLICK ON PHOTO TO KNOW THE LOATION </h6>
+    
+      <script>
+
+var d = document.createElement("img")
+document.body.appendChild(d)
+d.style="width:500px;margin-left:380px;margin-top:50px"
+d.style.borderRadius="50px"
+d.src="images/b1.jpg"
+
+
+d.onclick = function()
+{
+   // alert(this.src)
+   d.style.transform ="0.5s"
+   d.style.transform ="scale(1.6)"
+   alert(location.href)
+   //location.href="shoes.html"
+   //location.href="http://yahoo.com"
+
+}
+
+d.onmouseover =function()
+{
+    d.title = "zoom it!"
+    //d.style.cursor="zoom-in"
+    d.style.cursor="url(images/smll.png),auto"
+    d.style.transform ="scale(1.2)"
+}
+
+d.onmouseout = function()
+
+{
+    d.style.transform ="scale(0.5)"
+
+}
+
+
+
+
+      </script>
+</body>
+</html>
